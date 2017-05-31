@@ -1,5 +1,5 @@
 <h2>Create Pokemon</h2>
-
+<!-- Creation. -->
 <form action="/pokemons" method="post" >
 
   <p>Name: <input name="pokemon[name]"></p>
@@ -7,4 +7,12 @@
   <p>Type: <input name="pokemon[poke_type]"></p>
 
   <input type="submit" value="Create">
+</form>
+
+<!-- For Deleting. -->
+
+<h2>Delete</h2>
+<form action="/pokemons/<%= @pokemon.id %>" method="post">
+
+  <input type="hidden" name="_method" value="delete">
 </form>
