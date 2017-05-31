@@ -13,5 +13,5 @@ require_relative 'models/pokemon'
 
 get '/Pokemons' do
 @pokemon = Pokemon.all
-	erb :"pokemons/pokemon"
+	erb :"pokemons/index"
 end
