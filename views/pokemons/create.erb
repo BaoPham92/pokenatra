@@ -11,8 +11,10 @@
 
 <!-- For Deleting. -->
 <!-- If take the bottom code out then this page will function for creating pokemon but almost done.  -->
+
+
 <h2>Delete</h2>
 <form action="/pokemons/<%= @pokemon.id %>" method="post">
-
   <input type="hidden" name="_method" value="delete">
+  <input class="button-delete" type="submit" value="Delete!">
 </form>
